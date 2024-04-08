@@ -449,10 +449,17 @@ address {
 }
 
 .hero__image {
-  border-radius: 9.375rem;
-  width: 31.25rem;
-  height: 37.5rem;
-  background: #333;
+  width: 31rem;
+  pointer-events: none;
+  height: 31.8125rem;
+}
+
+.hero__image img {
+  width: 100%;
+  height: auto;
+  -webkit-transform: scale(2.1);
+      -ms-transform: scale(2.1);
+          transform: scale(2.1);
 }
 
 .left-hero {
@@ -466,10 +473,6 @@ address {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-}
-
-.left-hero:not(:last-child) {
-  margin-bottom: 2.5rem;
 }
 
 .left-hero__icon {
@@ -1149,8 +1152,8 @@ address {
 
   .hero__image {
     -webkit-box-flex: 0;
-        -ms-flex: 0 0 31.25rem;
-            flex: 0 0 31.25rem;
+        -ms-flex: 0 0 31rem;
+            flex: 0 0 31rem;
   }
 
   .hero__columns {
@@ -1267,6 +1270,10 @@ address {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+
+  .left-hero:not(:last-child) {
+    margin-bottom: 2.5rem;
   }
 
   .left-hero__descr:not(:last-child) {
@@ -1638,6 +1645,15 @@ address {
     width: 12.4375rem;
     height: 14.5625rem;
     right: -1.25rem;
+  }
+
+  .hero__body:not(:last-child) {
+    margin-bottom: 1.875rem;
+  }
+
+  .hero__image {
+    width: 27.875rem;
+    height: 28.625rem;
   }
 
   .hero__columns {
@@ -2034,8 +2050,8 @@ address {
   }
 
   .hero__image {
-    width: 18.75rem;
-    height: 22.5rem;
+    width: 22.25rem;
+    height: 22.875rem;
   }
 
   .left-hero__title {
@@ -2333,7 +2349,8 @@ address {
   }
 
   .hero__image {
-    width: 100%;
+    width: 17.75rem;
+    height: 18.25rem;
   }
 
   .hero__columns {
