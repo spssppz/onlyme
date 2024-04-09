@@ -237,7 +237,6 @@ address {
 .header {
   padding: 1.9375rem 0rem;
   position: relative;
-  z-index: 3;
 }
 
 .no-webp .header::after {
@@ -460,6 +459,8 @@ address {
   -webkit-transform: scale(2.1);
       -ms-transform: scale(2.1);
           transform: scale(2.1);
+  position: relative;
+  z-index: 5;
 }
 
 .left-hero {
@@ -1144,6 +1145,10 @@ address {
 }
 
 @media (min-width: 83.37375em) {
+  .hero {
+    padding-top: 1.875rem;
+  }
+
   .hero__body {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
@@ -1490,6 +1495,7 @@ address {
   }
 
   .header {
+    z-index: 3;
     padding: 1.25rem 0rem;
   }
 
